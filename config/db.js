@@ -8,15 +8,15 @@ const pool = mysql.createPool({
     password: process.env.DB_PASSWORD,
 });
 
-let sql = "SELECT * FROM posts";
+// let sql = "SELECT * FROM posts";
 
-pool.execute(sql, function(err, result){
+// pool.execute(sql, function(err, result){
 
-    if (err) throw err;
+//     if (err) throw err;
     
 
-        console.log(result);
-    });
+//         console.log(result);
+//     });
 
 
 module.exports = pool.promise();
