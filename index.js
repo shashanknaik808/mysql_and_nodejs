@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 
-app.use("/posts", require("./routes/postRoutes"));
+app.use("/posts", require("./routes/postRoutes.js"));
 
 
 app.use((err, req, res, next) => {
